@@ -1,0 +1,123 @@
+/* ===== MOBILE NAVBAR STYLES ===== */
+.menu-toggle {
+  background: none;
+  border: none;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 24px;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-light);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.line-top {
+  width: 60%;
+  align-self: flex-start;
+}
+
+.line-middle {
+  width: 100%;
+}
+
+.line-bottom {
+  width: 60%;
+  align-self: flex-end;
+}
+
+.menu-toggle.active .line-top {
+  transform: translateY(8px) rotate(45deg);
+  width: 100%;
+}
+
+.menu-toggle.active .line-middle {
+  opacity: 0;
+}
+
+.menu-toggle.active .line-bottom {
+  transform: translateY(-8px) rotate(-45deg);
+  width: 100%;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 65%;
+  height: 100vh;
+  background-color: var(--secondary);
+  padding: 5rem 2rem;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-nav.active {
+  left: 0;
+}
+
+.mobile-nav .nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobile-nav .nav-link {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+/* Book Now Button Inside Mobile Nav */
+.mobile-book-btn {
+  margin-top: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem 0;
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.mobile-book-btn:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+/* Overlay behind menu */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}

@@ -1,0 +1,38 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ===== COLOR VARIABLES ===== */
+:root {
+    --primary: #FF0000;
+    --primary-light: #ff3333;
+    --secondary: #000000;
+    --accent: #333333;
+    --accent-light: #444;
+    --light-gray: #808080;
+    --text-light: #FFFFFF;
+    --text-gray: #cccccc;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
