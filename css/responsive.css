@@ -1,107 +1,118 @@
+
+
 /* ===== RESPONSIVE DESIGN ===== */
 
-/* Large Devices (≤ 1024px) */
+/* Large Tablets & Smaller Laptops (≤ 1024px) */
 @media (max-width: 1024px) {
-    .hero {
-        min-height: 600px;
-    }
+  .hero {
+    min-height: 600px;
+  }
 
-    .booking-widget {
-        padding: 2rem;
-    }
+  .booking-widget {
+    padding: 2rem;
+  }
 }
 
-/* Medium Devices (≤ 992px) */
-@media (max-width: 992px) {
-    .nav-links,
-    .desktop-nav {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-}
-
-/* Tablets & Small Devices (≤ 768px) */
+/* Tablets & Mid-Sized Devices (≤ 768px) */
 @media (max-width: 768px) {
-    .header,
-    .nav-wrapper {
-        padding: 1rem;
-    }
+  .header {
+    padding: 1rem;
+  }
 
-    .header-actions {
-        gap: 1rem;
-    }
+  .desktop-nav {
+    display: none;
+  }
 
-    .hero-content {
-        padding: 4rem 1rem;
-    }
+  .menu-toggle {
+    display: flex;
+  }
 
-    .hero-content h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-    }
+  .header-actions {
+    gap: 1rem;
+  }
 
-    .hero-content p {
-        font-size: 1.1rem;
-    }
+  .hero-content {
+    padding: 4rem 1rem;
+  }
 
-    .booking-widget {
-        width: 95%;
-        padding: 1.5rem;
-    }
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
 
-    .booking-form {
-        grid-template-columns: 1fr;
-    }
+  .hero-content p {
+    font-size: 1.1rem;
+  }
 
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+  .booking-widget {
+    width: 95%;
+    padding: 1.5rem;
+  }
 
-    .testimonial-card {
-        padding: 2rem 1.5rem;
-    }
+  .booking-form {
+    grid-template-columns: 1fr;
+  }
 
-    .services h2,
-    .trust-badges h2,
-    .testimonials h2 {
-        font-size: 2.2rem;
-    }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .services h2,
+  .trust-badges h2,
+  .testimonials h2 {
+    font-size: 2.2rem;
+  }
 }
 
-/* Small Mobile Phones (≤ 576px) */
-@media (max-width: 576px) {
-    .header-actions {
-        gap: 0.8rem;
-    }
-
-    .book-now-btn {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
-    }
-}
-
-/* Extra Small Mobile Phones (≤ 480px) */
+/* Mobile Phones (≤ 480px) */
 @media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
+  .header-actions {
+    gap: 0.8rem;
+  }
 
-    .mobile-nav {
-        width: 80%;
-    }
+  .book-now-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
 
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
 
-    .testimonial-prev,
-    .testimonial-next {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-    }
+  .mobile-nav {
+    width: 80%;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-prev,
+  .testimonial-next {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+/* General Navbar Breakpoints */
+@media screen and (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-wrapper {
+    padding: 1rem;
+  }
 }

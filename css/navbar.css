@@ -1,16 +1,5 @@
 /* ===== RILEYCAB NAVBAR STYLES ===== */
 
-:root {
-  --primary: #FF0000;
-  --primary-light: #ff3333;
-  --secondary: #000000;
-  --accent: #333333;
-  --accent-light: #444;
-  --light-gray: #808080;
-  --text-light: #FFFFFF;
-  --text-gray: #cccccc;
-}
-
 .navbar {
   width: 100%;
   background-color: var(--secondary);
@@ -72,30 +61,3 @@
   background-color: var(--primary);
 }
 
-/* BOOK NOW BTN */
-
-.book-now-btn {
-  background-color: var(--primary);
-  color: var(--text-light);
-  padding: 0.7rem 1.6rem;
-  border: none;
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
-}
-
-.book-now-btn:hover {
-  background-color: var(--primary-light);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.4);
-}
-
-@media screen and (max-width: 992px) {
-  .desktop-book-now {
-    display: none;
-  }
-}
