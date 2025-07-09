@@ -3,23 +3,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Auto-update copyright year
     document.getElementById('current-year').textContent = new Date().getFullYear();
     
-    // Mobile menu toggle
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileNav = document.querySelector('.mobile-nav');
-    
-    menuToggle.addEventListener('click', function() {
-        this.classList.toggle('active');
-        mobileNav.classList.toggle('active');
-        document.body.classList.toggle('no-scroll');
+    const body = document.body;
+    const toggle = document.getElementById('menuToggle');
+    const backdrop = document.getElementById('menuBackdrop');
+
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('menu-open');
     });
-    
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-            mobileNav.classList.remove('active');
-            document.body.classList.remove('no-scroll');
-        });
+
+    backdrop.addEventListener('click', () => {
+      body.classList.remove('menu-open');
+    });
+
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
     
     // Hero slider

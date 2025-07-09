@@ -98,17 +98,20 @@
     }
 }
 
-/* ===== RESPONSIVE TRIGGER ===== */
-@media (max-width: 768px) {
-  .desktop-nav {
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 992px) {
+  .nav-links {
     display: none;
   }
 
   .menu-toggle {
     display: flex;
   }
+}
 
-  .header-actions {
-    gap: 1rem;
+@media screen and (max-width: 576px) {
+  .nav-wrapper {
+    padding: 1rem;
   }
 }
